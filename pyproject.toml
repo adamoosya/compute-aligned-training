@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compute-aligned-training"
+version = "0.1.0.dev7"
+description = "Compute Aligned Training: SFT, weighted RL, MATH and synthetic protein experiments"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["torch>=2.6,<3", "numpy>=1.26,<3"]
+
+[project.urls]
+Repository = "https://github.com/adamoosya/compute-aligned-training"
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+plots = ["matplotlib>=3.8,<4"]
+data = ["datasets>=3,<5"]
+hf = ["transformers==4.57.6", "peft==0.18.1", "accelerate==1.12.0"]
+cuda = ["bitsandbytes==0.48.2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cat*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+cat = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

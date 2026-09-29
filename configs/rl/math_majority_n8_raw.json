@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "name": "math_majority_n8_raw",
+  "task": "math",
+  "stage": "rl",
+  "model": {
+    "name": "mistralai/Mistral-7B-Instruct-v0.2",
+    "revision": null,
+    "device": "cuda:0",
+    "precision": "fp16",
+    "quantization": "nf4",
+    "gradient_checkpointing": true,
+    "attention": "sdpa"
+  },
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "sampling": {
+    "num_candidates": 8,
+    "chunk_size": 4,
+    "max_prompt_tokens": 256,
+    "max_new_tokens": 512,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "top_k": 0,
+    "seed": 42,
+    "prompt_template": "Problem:\n{problem}"
+  },
+  "weights": {
+    "strategy": "majority",
+    "n": 8,
+    "form": "raw",
+    "probability": "empirical",
+    "normalize": true,
+    "clip": 10.0,
+    "quantile": "within_prompt"
+  },
+  "update": {
+    "surrogate": "reinforce",
+    "clip_ratio": 0.2,
+    "beta": 0.0,
+    "advantage_epsilon": 0.0001,
+    "advantage_clip": null,
+    "all_wrong_penalty": 0.5,
+    "forward_batch_size": 1,
+    "max_grad_norm": 1.0,
+    "precision": "fp16"
+  },
+  "data": {
+    "dataset_name": "nlile/hendrycks-MATH-benchmark",
+    "revision": null,
+    "split": "train",
+    "count": 300,
+    "offset": 0,
+    "levels": [
+      1,
+      2,
+      3
+    ],
+    "seed": 42
+  },
+  "training": {
+    "epochs": 1,
+    "max_steps": null,
+    "prompts_per_step": 4,
+    "learning_rate": 1e-06,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "warmup_steps": 60
+  }
+}

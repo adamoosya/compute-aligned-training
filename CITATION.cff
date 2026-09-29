@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the paper when using this implementation."
+title: "Compute Aligned Training"
+type: software
+license: MIT
+repository-code: "https://github.com/adamoosya/compute-aligned-training"
+version: 0.1.0.dev7
+authors:
+  - family-names: Ousherovitch
+    given-names: Adam
+  - family-names: Tewari
+    given-names: Ambuj
+preferred-citation:
+  type: conference-paper
+  title: "Compute Aligned Training: Optimizing for Test Time Inference"
+  authors:
+    - family-names: Ousherovitch
+      given-names: Adam
+    - family-names: Tewari
+      given-names: Ambuj
+  year: 2026
+  collection-title: "Advances in Neural Information Processing Systems"

@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "experiments": [
+    {
+      "id": "math_sft_passn",
+      "paper": "Table 2 / Figure 1",
+      "trainer": "train_math_sft.py",
+      "configs": [
+        "configs/sft/passn_warmup.json",
+        "configs/sft/passn_baseline.json",
+        "configs/sft/passn_n4.json",
+        "configs/sft/passn_n16.json",
+        "configs/sft/passn_n64.json"
+      ],
+      "generation_config": "configs/generation/math_passn_sft.json",
+      "implementation": "paper_based_refactor",
+      "historical_result_status": "saved_means_recovered"
+    },
+    {
+      "id": "math_sft_majority",
+      "paper": "Table 3 / Figure 2",
+      "trainer": "train_math_sft.py",
+      "configs": [
+        "configs/sft/majority_warmup.json",
+        "configs/sft/majority_baseline.json",
+        "configs/sft/majority_n8_k3.json",
+        "configs/sft/majority_n16_k4.json",
+        "configs/sft/majority_n64_k26.json"
+      ],
+      "generation_config": "configs/generation/math_majority_sft.json",
+      "implementation": "paper_based_refactor",
+      "historical_result_status": "saved_means_recovered"
+    },
+    {
+      "id": "math_rl_passn",
+      "paper": "Table 4 / Figure 3 / Appendix N.1",
+      "trainer": "train_math_rl.py",
+      "configs": [
+        "configs/rl/math_passn_baseline.json",
+        "configs/rl/math_passn_n4_log.json",
+        "configs/rl/math_passn_n16_log.json",
+        "configs/rl/math_passn_n4_raw.json",
+        "configs/rl/math_passn_n16_raw.json"
+      ],
+      "generation_config": "configs/generation/math_passn_rl.json",
+      "implementation": "paper_based_refactor",
+      "historical_result_status": "saved_means_recovered"
+    },
+    {
+      "id": "math_rl_majority",
+      "paper": "Table 5 / Figure 4 / Appendix N.2",
+      "trainer": "train_math_rl.py",
+      "configs": [
+        "configs/rl/math_majority_baseline.json",
+        "configs/rl/math_majority_n4_raw.json",
+        "configs/rl/math_majority_n8_raw.json",
+        "configs/rl/math_majority_n4_log.json",
+        "configs/rl/math_majority_n8_log.json"
+      ],
+      "generation_config": "configs/generation/math_majority_rl.json",
+      "implementation": "paper_based_refactor",
+      "historical_result_status": "saved_means_recovered"
+    },
+    {
+      "id": "protein_unconditional",
+      "paper": "Table 6 / Figures 5 and 7",
+      "trainer": "train_protein.py",
+      "configs": [
+        "configs/protein/protein_unconditional_baseline.json",
+        "configs/protein/protein_unconditional_bon2.json",
+        "configs/protein/protein_unconditional_bon4.json",
+        "configs/protein/protein_unconditional_bon8.json"
+      ],
+      "generation_config": null,
+      "implementation": "paper_based_refactor",
+      "historical_result_status": "saved_means_recovered"
+    },
+    {
+      "id": "protein_conditional",
+      "paper": "Table 6 / Figures 6 and 8",
+      "trainer": "train_protein.py",
+      "configs": [
+        "configs/protein/conditional_warmup.json",
+        "configs/protein/protein_conditional_baseline.json",
+        "configs/protein/protein_conditional_bon2.json",
+        "configs/protein/protein_conditional_bon4.json",
+        "configs/protein/protein_conditional_bon8.json"
+      ],
+      "generation_config": null,
+      "implementation": "paper_based_refactor",
+      "historical_result_status": "saved_means_recovered"
+    },
+    {
+      "id": "token_margin",
+      "paper": "Appendix A.7: tab:token_level_results",
+      "trainer": "train_appendix_sft.py",
+      "configs": [
+        "configs/appendix/token_margin_warmup.json",
+        "configs/appendix/token_margin_ce.json",
+        "configs/appendix/token_margin_cat.json",
+        "configs/appendix/token_margin_pairwise.json"
+      ],
+      "generation_config": "configs/appendix/token_margin_generation.json",
+      "implementation": "paper_based_refactor",
+      "historical_result_status": "manuscript_transcription_only"
+    },
+    {
+      "id": "warmup_transfer",
+      "paper": "Appendix D: tab:sft_rl",
+      "trainer": "train_appendix_sft.py",
+      "configs": [
+        "configs/appendix/transfer_ce_warmup.json",
+        "configs/appendix/transfer_cat_warmup.json"
+      ],
+      "generation_config": "configs/appendix/warmup_transfer_generation.json",
+      "implementation": "paper_based_refactor",
+      "historical_result_status": "manuscript_transcription_only"
+    },
+    {
+      "id": "majority_sweep",
+      "paper": "Appendix I.4: fig:maj64_sweep",
+      "trainer": "train_math_sft.py",
+      "configs": [
+        "configs/appendix/majority_n64_k16.json",
+        "configs/appendix/majority_n64_k22.json",
+        "configs/sft/majority_n64_k26.json"
+      ],
+      "generation_config": "configs/generation/math_majority_sft.json",
+      "implementation": "paper_based_refactor",
+      "historical_result_status": "saved_means_recovered"
+    }
+  ]
+}

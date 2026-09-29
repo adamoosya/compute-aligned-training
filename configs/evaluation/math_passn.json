@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "budgets": [1, 4, 8, 16, 32, 64],
+  "majority_trials": 500,
+  "seed": 42,
+  "extraction": "boxed_or_last_number",
+  "tie_break": "first",
+  "atol": 0.0001
+}

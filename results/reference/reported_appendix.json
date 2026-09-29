@@ -1,0 +1,59 @@
+{
+  "kind": "paper_transcription_only",
+  "note": "These two appendix tables were available in the manuscript, but their original numerical logs were not recovered. Values below must not be described as independently verified or newly reproduced.",
+  "tables": [
+    {
+      "id": "token_margin_reported",
+      "paper_label": "tab:token_level_results",
+      "columns": [
+        "Pass@1 (%)",
+        "Maj@64 (%)",
+        "Aggregation gain (percentage points)"
+      ],
+      "rows": {
+        "Standard SFT": [
+          12.9,
+          16.2,
+          3.3
+        ],
+        "CAT Majority Vote": [
+          13.03,
+          17.6,
+          4.57
+        ],
+        "Pairwise Contrastive": [
+          12.47,
+          18.2,
+          5.72
+        ]
+      }
+    },
+    {
+      "id": "warmup_rl_reported",
+      "paper_label": "tab:sft_rl",
+      "columns": [
+        "Pass@1 (%)",
+        "Pass@2 (%)",
+        "Pass@4 (%)",
+        "Pass@8 (%)",
+        "Pass@16 (%)"
+      ],
+      "rows": {
+        "SFT warmup + RL": [
+          4.06,
+          6.25,
+          9.19,
+          12.8,
+          17.0
+        ],
+        "CAT warmup + RL": [
+          5.56,
+          8.82,
+          12.95,
+          17.63,
+          22.0
+        ]
+      }
+    }
+  ]
+}

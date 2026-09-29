@@ -1,0 +1,874 @@
+{
+  "kind": "paper_transcription_for_comparison",
+  "source": "Last uploaded manuscript, table labels tab:pass_results, tab:maj_results, tab:rl_sft_comparison, tab:maj_rl_results, tab:bon_scaling. Later text edits are not a new data source.",
+  "checks": [
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "SFT_Baseline",
+      "budget": 1,
+      "reported_mean": 15.8
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "SFT_Baseline",
+      "budget": 4,
+      "reported_mean": 29.6
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "SFT_Baseline",
+      "budget": 8,
+      "reported_mean": 37.9
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "SFT_Baseline",
+      "budget": 16,
+      "reported_mean": 46.3
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "SFT_Baseline",
+      "budget": 32,
+      "reported_mean": 53.7
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "SFT_Baseline",
+      "budget": 64,
+      "reported_mean": 59.8
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_4",
+      "budget": 1,
+      "reported_mean": 15.2
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_4",
+      "budget": 4,
+      "reported_mean": 30.5
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_4",
+      "budget": 8,
+      "reported_mean": 39.9
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_4",
+      "budget": 16,
+      "reported_mean": 49.2
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_4",
+      "budget": 32,
+      "reported_mean": 57.5
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_4",
+      "budget": 64,
+      "reported_mean": 63.8
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_16",
+      "budget": 1,
+      "reported_mean": 14.5
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_16",
+      "budget": 4,
+      "reported_mean": 30.1
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_16",
+      "budget": 8,
+      "reported_mean": 40.3
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_16",
+      "budget": 16,
+      "reported_mean": 50.9
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_16",
+      "budget": 32,
+      "reported_mean": 59.8
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_16",
+      "budget": 64,
+      "reported_mean": 66.2
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_64",
+      "budget": 1,
+      "reported_mean": 13.5
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_64",
+      "budget": 4,
+      "reported_mean": 28.5
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_64",
+      "budget": 8,
+      "reported_mean": 38.7
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_64",
+      "budget": 16,
+      "reported_mean": 49.4
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_64",
+      "budget": 32,
+      "reported_mean": 59.3
+    },
+    {
+      "group": "math_sft_passn",
+      "paper_label": "tab:pass_results",
+      "model": "PassAtN_64",
+      "budget": 64,
+      "reported_mean": 67.6
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "SFT",
+      "budget": 1,
+      "reported_mean": 21.9
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "SFT",
+      "budget": 4,
+      "reported_mean": 22.9
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "SFT",
+      "budget": 8,
+      "reported_mean": 23.3
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "SFT",
+      "budget": 16,
+      "reported_mean": 23.6
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "SFT",
+      "budget": 32,
+      "reported_mean": 23.8
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "SFT",
+      "budget": 64,
+      "reported_mean": 23.9
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N8_Fixed",
+      "budget": 1,
+      "reported_mean": 22.2
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N8_Fixed",
+      "budget": 4,
+      "reported_mean": 23.7
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N8_Fixed",
+      "budget": 8,
+      "reported_mean": 24.8
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N8_Fixed",
+      "budget": 16,
+      "reported_mean": 25.4
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N8_Fixed",
+      "budget": 32,
+      "reported_mean": 25.6
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N8_Fixed",
+      "budget": 64,
+      "reported_mean": 25.7
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N16",
+      "budget": 1,
+      "reported_mean": 22.4
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N16",
+      "budget": 4,
+      "reported_mean": 24.3
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N16",
+      "budget": 8,
+      "reported_mean": 25.2
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N16",
+      "budget": 16,
+      "reported_mean": 25.9
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N16",
+      "budget": 32,
+      "reported_mean": 26.1
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N16",
+      "budget": 64,
+      "reported_mean": 26.2
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N64_Frac40",
+      "budget": 1,
+      "reported_mean": 21.4
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N64_Frac40",
+      "budget": 4,
+      "reported_mean": 22.7
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N64_Frac40",
+      "budget": 8,
+      "reported_mean": 23.7
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N64_Frac40",
+      "budget": 16,
+      "reported_mean": 24.2
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N64_Frac40",
+      "budget": 32,
+      "reported_mean": 24.5
+    },
+    {
+      "group": "math_sft_majority",
+      "paper_label": "tab:maj_results",
+      "model": "MajVote_N64_Frac40",
+      "budget": 64,
+      "reported_mean": 24.9
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "Standard_RL",
+      "budget": 1,
+      "reported_mean": 8.3
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "Standard_RL",
+      "budget": 8,
+      "reported_mean": 24.1
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "Standard_RL",
+      "budget": 16,
+      "reported_mean": 30.3
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "Standard_RL",
+      "budget": 32,
+      "reported_mean": 35.8
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "SFT_Weight_N4",
+      "budget": 1,
+      "reported_mean": 8.8
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "SFT_Weight_N4",
+      "budget": 8,
+      "reported_mean": 25.3
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "SFT_Weight_N4",
+      "budget": 16,
+      "reported_mean": 31.6
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "SFT_Weight_N4",
+      "budget": 32,
+      "reported_mean": 36.6
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "SFT_Weight_N16",
+      "budget": 1,
+      "reported_mean": 8.3
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "SFT_Weight_N16",
+      "budget": 8,
+      "reported_mean": 25.1
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "SFT_Weight_N16",
+      "budget": 16,
+      "reported_mean": 32.5
+    },
+    {
+      "group": "math_rl_passn",
+      "paper_label": "tab:rl_sft_comparison",
+      "model": "SFT_Weight_N16",
+      "budget": 32,
+      "reported_mean": 40.0
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "Standard_RL",
+      "budget": 1,
+      "reported_mean": 11.1
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "Standard_RL",
+      "budget": 4,
+      "reported_mean": 14.4
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "Standard_RL",
+      "budget": 8,
+      "reported_mean": 17.6
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "Standard_RL",
+      "budget": 16,
+      "reported_mean": 19.2
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "RL_Wt_Maj4",
+      "budget": 1,
+      "reported_mean": 10.9
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "RL_Wt_Maj4",
+      "budget": 4,
+      "reported_mean": 15.0
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "RL_Wt_Maj4",
+      "budget": 8,
+      "reported_mean": 17.9
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "RL_Wt_Maj4",
+      "budget": 16,
+      "reported_mean": 23.0
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "RL_Wt_Maj8",
+      "budget": 1,
+      "reported_mean": 11.1
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "RL_Wt_Maj8",
+      "budget": 4,
+      "reported_mean": 14.0
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "RL_Wt_Maj8",
+      "budget": 8,
+      "reported_mean": 18.1
+    },
+    {
+      "group": "math_rl_majority",
+      "paper_label": "tab:maj_rl_results",
+      "model": "RL_Wt_Maj8",
+      "budget": 16,
+      "reported_mean": 20.9
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "Standard RL",
+      "budget": 1,
+      "reported_mean": 3.18
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "Standard RL",
+      "budget": 2,
+      "reported_mean": 4.2
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "Standard RL",
+      "budget": 4,
+      "reported_mean": 5.3
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "Standard RL",
+      "budget": 8,
+      "reported_mean": 6.54
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "Standard RL",
+      "budget": 16,
+      "reported_mean": 8.25
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "Standard RL",
+      "budget": 32,
+      "reported_mean": 10.06
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "Standard RL",
+      "budget": 64,
+      "reported_mean": 11.4
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-2 (Standard)",
+      "budget": 1,
+      "reported_mean": 7.97
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-2 (Standard)",
+      "budget": 2,
+      "reported_mean": 10.16
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-2 (Standard)",
+      "budget": 4,
+      "reported_mean": 11.41
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-2 (Standard)",
+      "budget": 8,
+      "reported_mean": 11.93
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-2 (Standard)",
+      "budget": 16,
+      "reported_mean": 12.1
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-2 (Standard)",
+      "budget": 32,
+      "reported_mean": 12.15
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-2 (Standard)",
+      "budget": 64,
+      "reported_mean": 12.16
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-4 (Standard)",
+      "budget": 1,
+      "reported_mean": 9.73
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-4 (Standard)",
+      "budget": 2,
+      "reported_mean": 11.33
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-4 (Standard)",
+      "budget": 4,
+      "reported_mean": 11.92
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-4 (Standard)",
+      "budget": 8,
+      "reported_mean": 12.1
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-4 (Standard)",
+      "budget": 16,
+      "reported_mean": 12.15
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-4 (Standard)",
+      "budget": 32,
+      "reported_mean": 12.16
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-4 (Standard)",
+      "budget": 64,
+      "reported_mean": 12.16
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-8 (Standard)",
+      "budget": 1,
+      "reported_mean": 9.82
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-8 (Standard)",
+      "budget": 2,
+      "reported_mean": 11.53
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-8 (Standard)",
+      "budget": 4,
+      "reported_mean": 12.04
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-8 (Standard)",
+      "budget": 8,
+      "reported_mean": 12.14
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-8 (Standard)",
+      "budget": 16,
+      "reported_mean": 12.16
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-8 (Standard)",
+      "budget": 32,
+      "reported_mean": 12.16
+    },
+    {
+      "group": "protein_unconditional",
+      "paper_label": "tab:bon_scaling (unconditional)",
+      "model": "BoN-8 (Standard)",
+      "budget": 64,
+      "reported_mean": 12.16
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "Standard RL",
+      "budget": 1,
+      "reported_mean": 7.26
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "Standard RL",
+      "budget": 2,
+      "reported_mean": 7.7
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "Standard RL",
+      "budget": 4,
+      "reported_mean": 8.02
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "Standard RL",
+      "budget": 8,
+      "reported_mean": 8.31
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "Standard RL",
+      "budget": 16,
+      "reported_mean": 8.6
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "Standard RL",
+      "budget": 32,
+      "reported_mean": 8.89
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-2 RL",
+      "budget": 1,
+      "reported_mean": 5.36
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-2 RL",
+      "budget": 2,
+      "reported_mean": 7.64
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-2 RL",
+      "budget": 4,
+      "reported_mean": 8.84
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-2 RL",
+      "budget": 8,
+      "reported_mean": 9.48
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-2 RL",
+      "budget": 16,
+      "reported_mean": 9.86
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-2 RL",
+      "budget": 32,
+      "reported_mean": 9.96
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-4 RL",
+      "budget": 1,
+      "reported_mean": 5.82
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-4 RL",
+      "budget": 2,
+      "reported_mean": 7.49
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-4 RL",
+      "budget": 4,
+      "reported_mean": 9.05
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-4 RL",
+      "budget": 8,
+      "reported_mean": 9.61
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-4 RL",
+      "budget": 16,
+      "reported_mean": 9.86
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-4 RL",
+      "budget": 32,
+      "reported_mean": 9.94
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-8 RL",
+      "budget": 1,
+      "reported_mean": 5.67
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-8 RL",
+      "budget": 2,
+      "reported_mean": 7.55
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-8 RL",
+      "budget": 4,
+      "reported_mean": 8.96
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-8 RL",
+      "budget": 8,
+      "reported_mean": 9.4
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-8 RL",
+      "budget": 16,
+      "reported_mean": 9.8
+    },
+    {
+      "group": "protein_conditional",
+      "paper_label": "tab:bon_scaling (conditional)",
+      "model": "BoN-8 RL",
+      "budget": 32,
+      "reported_mean": 9.94
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+# Local credentials and machine configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*token*.txt
+
+# Python and editor output
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.DS_Store
+.vscode/
+.idea/
+
+# Historical archives and private experiment material
+*.tar.gz
+*.tgz
+*.zip
+legacy/
+private/
+artifacts/
+checkpoints/
+outputs/
+runs/
+wandb/
+huggingface_cache/
+.cache/
+*.safetensors
+*.pt
+*.pth
+pytorch_model*.bin
+adapter_model*.bin
+optimizer*.bin
+optimizer*.pt
+training_args.bin

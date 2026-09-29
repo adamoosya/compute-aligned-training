@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "name": "protein_conditional_bon2",
+  "task": "protein_conditional",
+  "stage": "rl",
+  "model": {
+    "name": "nferruz/ProtGPT2",
+    "revision": null,
+    "device": "cuda:0",
+    "precision": "fp16",
+    "quantization": "none",
+    "gradient_checkpointing": true,
+    "attention": "sdpa"
+  },
+  "lora": null,
+  "sampling": {
+    "num_candidates": 25,
+    "chunk_size": 4,
+    "max_prompt_tokens": 128,
+    "max_new_tokens": 32,
+    "temperature": 1.3,
+    "top_p": 1.0,
+    "top_k": 0,
+    "seed": 42,
+    "prompt_template": "Problem:\n{problem}"
+  },
+  "weights": {
+    "strategy": "bon",
+    "n": 2,
+    "form": "raw",
+    "probability": "empirical",
+    "normalize": true,
+    "clip": null,
+    "quantile": "within_prompt"
+  },
+  "update": {
+    "surrogate": "reinforce",
+    "clip_ratio": 0.2,
+    "beta": 0.05,
+    "advantage_epsilon": 0.0001,
+    "advantage_clip": 5.0,
+    "all_wrong_penalty": 0.0,
+    "forward_batch_size": 1,
+    "max_grad_norm": 1.0,
+    "precision": "fp16"
+  },
+  "data": {
+    "dataset_name": null,
+    "revision": null,
+    "split": "train",
+    "count": 3000,
+    "offset": 0,
+    "levels": null,
+    "seed": 42
+  },
+  "training": {
+    "epochs": 1,
+    "max_steps": 300,
+    "prompts_per_step": 4,
+    "learning_rate": 2e-06,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "warmup_steps": 60
+  }
+}
